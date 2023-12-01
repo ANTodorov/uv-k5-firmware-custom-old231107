@@ -2608,7 +2608,7 @@ static void APP_process_key(const key_code_t Key, const bool key_pressed, const 
 	#ifdef ENABLE_AIRCOPY
 		if (g_current_display_screen == DISPLAY_AIRCOPY)
 		{
-			AIRCOPY_process_key(key, key_pressed, key_held);
+			AIRCOPY_process_key(Key, key_pressed, key_held);
 			return;
 		}
 	#endif
